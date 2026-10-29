@@ -1,3 +1,5 @@
-# КР2
-Кирьянов Константин Николаевич, ЭФБО-01-24.
-GitHub Actions, Python, Go, gRPC, mTLS, Nginx.
+# KR2 template
+
+Counter service on Flask + Redis.
+
+Local run: `pip install -r requirements.txt && flask --app app run`

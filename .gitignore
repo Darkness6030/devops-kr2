@@ -1,5 +1,0 @@
-certs/
-__pycache__/
-*.pyc
-.venv/
-dice-server
