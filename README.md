@@ -1,5 +1,8 @@
-# KR2 template
+# КР2 — вариант 4
 
-Counter service on Flask + Redis.
+Flask + Redis, STUDENT=Kiryanov, внутренний порт 8004, домен kv.devops.local.
 
-Local run: `pip install -r requirements.txt && flask --app app run`
+Основа: исходный Flask-шаблон в main. Логика app.py и зависимости сохранены.
+На общем сервере Gurza1 стандартные порты 80/443 заняты. Учебный Nginx слушает только 127.0.0.1:8084/8444; доступ извне — через SSH-туннель. Это адаптация стенда, а не точное воспроизведение Host-only VM.
+
+Секрет создаётся только на сервере в .env (600). Для запуска: docker compose up -d --build. Не использовать down -v.
