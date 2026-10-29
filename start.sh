@@ -1,5 +1,6 @@
 #!/bin/sh
 set -eu
+mkdir -p logs
 sh certs.sh > /tmp/certs.log 2>&1
 /work/dice-server > /tmp/kr2-go.log 2>&1 &
 nginx -p /work -c nginx.conf
